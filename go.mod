@@ -3,6 +3,7 @@ module github.com/itsahedge/wrapped-celestia
 go 1.21.5
 
 require (
+	github.com/alecthomas/kong v0.8.1 // indirect
 	github.com/btcsuite/btcd v0.22.0-beta // indirect
 	github.com/btcsuite/btcutil v1.0.3-0.20201208143702-a53e38424cce // indirect
 	github.com/cbergoon/merkletree v0.2.0 // indirect
