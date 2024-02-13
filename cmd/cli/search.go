@@ -7,7 +7,7 @@ import (
 type GetBridged struct{}
 
 func (c *GetBridged) Run() error {
-	client, err := TiaClient()
+	client, err := OnchainClient()
 	if err != nil {
 		return err
 	}

@@ -1,4 +1,4 @@
-package pkg
+package onchain
 
 import (
 	"github.com/thirdweb-dev/go-sdk/v2/thirdweb"
@@ -11,7 +11,7 @@ const wTIA_ABI = "[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"
 const deployTxn = "0x95066a373e2debbaba8e926d653f713c69962cecbc18b2bd7d30c98c062b60b7"
 const deployBlock = 18995342
 
-func (c *TiaClient) GetBridgedTo() (*big.Int, error) {
+func (c *OnchainClient) GetBridgedTo() (*big.Int, error) {
 	filters := map[string]interface{}{}
 	queryOptions := thirdweb.EventQueryOptions{
 		FromBlock: deployBlock,

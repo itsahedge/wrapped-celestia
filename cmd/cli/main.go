@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/alecthomas/kong"
-	"github.com/itsahedge/wrapped-celestia/cmd/pkg"
+	"github.com/itsahedge/wrapped-celestia/cmd/pkg/onchain"
 	"os"
 )
 
@@ -24,6 +24,6 @@ func NewCLI() *kong.Context {
 	return ctx
 }
 
-func TiaClient() (*pkg.TiaClient, error) {
-	return pkg.NewClient()
+func OnchainClient() (*onchain.OnchainClient, error) {
+	return onchain.NewClient()
 }
