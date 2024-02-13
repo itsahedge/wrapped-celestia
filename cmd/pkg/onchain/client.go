@@ -22,7 +22,7 @@ func NewClient() (*OnchainClient, error) {
 		sdk: sdk,
 		ctx: ctx,
 	}
-	contracts := client.CreatePairContracts([]string{contractWTIA})
+	contracts := client.CreatePairContracts([]string{wTIA_Contract_Address})
 	client.contracts = contracts
 	return client, nil
 }
